@@ -1,0 +1,482 @@
+/************************** body style***************/
+:root{
+ 
+    --main-color: #ff6900;
+    --main-color2:#ffedd4;
+
+
+}
+
+.bg-main-color{
+    background-color: var(--main-color)
+}
+.bg-main-color2{
+    background-color: var(--main-color2)
+}
+.text-clore{
+color: var(--main-color);
+}
+
+p{
+    color:oklch(0.446 0.03 256.802);
+}
+body{
+    margin: 0px;
+     
+    box-sizing: border-box;
+   font-family: "Inter", sans-serif;
+
+   background-color:#fff9ec;
+    
+
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+::selection {
+  background-color:#2196F3;;
+}
+
+a{
+    display: inline-block;
+}
+
+
+img{ 
+ width: 100%;
+ display: block;
+ overflow: hidden;
+}
+a{
+    text-decoration: none;
+    
+}
+
+
+section {
+     padding-block: 80px;
+     
+   }
+.mainShadow{
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08), 0 5px 15px rgba(0, 0, 0, 0.05);
+
+}
+  /************nav style**********/
+ 
+.navbar-brand i{
+   width: 48px; 
+   height: 48px;
+}
+.nav-img{
+width: 40px;
+height: 40px;
+border-radius: 3.40282e38px;
+border:2px solid #ffb86a ;
+cursor: pointer;
+ overflow-clip-margin: content-box;
+    overflow: clip;
+    
+}
+
+
+
+
+/***********meals sttyle ***************/
+
+.row-height{
+    height: 100vh; 
+}
+.bg-img{
+  background-color:#fff9ec;
+  border-radius: 30px;     
+    overflow: hidden;        
+    position: relative;       
+    
+
+}
+.meals .img-wrapper {
+  height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.meal-img{
+   object-fit: cover;
+    object-position: center;
+    border-radius: inherit;
+    vertical-align: middle;
+    height: 100%;
+   
+}
+.icon{
+    width: 48px;
+    height: 48px;
+    cursor:pointer ;
+    border-radius: 12px;
+
+}
+.level{
+background-color: #dcfce7;
+color: #008236;
+}
+.cuisine{
+background-color:#dbeafe;
+color:#1447e6;
+
+}
+.exeedTimeFontP{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    
+}
+.exeedTimeFontH{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: oklch(0.444 0.177 26.899);
+    
+}
+.exeedTime{
+    padding: 16px;
+    border-left:4px solid #fb2c36;
+    border-radius:8px;
+    margin-bottom:24px;
+
+}
+.img-desc{
+  width: 90%;
+  padding: 12px;
+  background-color: #fffffff2;
+  border-radius: 16px;
+  left: 24px;
+  right: 24px;
+  bottom: 24px;
+   box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.10),
+        0 4px 6px -4px rgba(0, 0, 0, 0.10);
+}
+.img-reviews{
+  margin-right:8px;
+  padding-block:8px;
+  padding-inline:16px;
+  border-radius:3.40282e38px;
+  left:24px;
+  top:24px;
+   box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.10),
+        0 4px 6px -4px rgba(0, 0, 0, 0.10);
+}
+
+.my-button {
+  background: linear-gradient(to right, #f97316, #ef4444);
+  
+  padding: 0.5rem 1rem; 
+  border-radius: 0.75rem; 
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+  font-size: 0.875rem; 
+  cursor: pointer;
+  transition: 0.25s ease;
+  transform: scale(1);
+}
+
+
+@media (min-width: 768px) {
+  .my-button {
+    padding: 0.75rem 1.5rem; /* px-6 py-3 */
+    font-size: 1rem; /* text-base */
+  }
+}
+
+.my-button:hover {
+  background: linear-gradient(to right, #ea580c, #dc2626); 
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18); 
+  transform: scale(1.05); 
+  
+}
+
+
+/***********nav and tabs style***********/
+.nav-link {
+  color: #000;
+}
+
+
+.nav-tabs .nav-link {
+  border: none !important;         
+  border-bottom: 3px solid #fff !important; 
+  color: #555 !important;           
+  font-weight: 600;
+  padding: 10px 18px;
+  transition: .3s ease;
+}
+
+
+.nav-tabs .nav-link:hover {
+  color: #ea580c !important;       
+  border-bottom-color: #ea580c !important;
+}
+
+
+.nav-tabs .nav-link.active {
+  color: #ea580c !important;       
+  background-color: transparent !important;
+  border-bottom: 3px solid #ea580c !important; 
+}
+
+/************************** Ingredients List Style ***************/
+
+#ingredients-list {
+   
+    list-style: none; 
+    padding-left: 0; 
+    margin-top: 20px;
+}
+
+
+.ingredient-item {
+    display: flex;
+    align-items: flex-start; 
+    margin-bottom: 16px; 
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151; 
+}
+
+
+.item-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; 
+    background-color: #ff6900; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px; 
+    flex-shrink: 0; 
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
+.item-text {
+    flex-grow: 1;
+    color: #374151; 
+}
+.h-scroll{
+ max-height:350px ;
+ overflow-y: scroll;
+}
+/************************** 2. Nutrition Tab Style ***************/
+
+
+#nutrition-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 16px;
+    padding: 0;
+    margin: 16px 0; 
+    list-style: none; 
+}
+
+.nutrition-card {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color:#fbf9fa; 
+    padding: 16px;
+    border-radius: 12px; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+.card-icon-name {
+    display: flex;
+    align-items: center;
+}
+
+.card-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px; 
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.card-name {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151; 
+    flex-grow: 1;
+}
+
+
+.card-value {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937; 
+    flex-shrink: 0;
+}
+
+
+.nutrition-card.calories .card-icon-wrapper {
+    background-color: #fff1e5; 
+}
+.nutrition-card.calories .card-icon-wrapper i {
+    color: #f97316; 
+}
+
+.nutrition-card.protein .card-icon-wrapper {
+    background-color: #e6f0ff; 
+}
+.nutrition-card.protein .card-icon-wrapper i {
+    color: #3b82f6; 
+}
+
+.nutrition-card.carbs .card-icon-wrapper {
+    background-color: #fefce8; 
+}
+.nutrition-card.carbs .card-icon-wrapper i {
+    color: #eab308; 
+}
+
+.nutrition-card.fat .card-icon-wrapper {
+    background-color: #fee2e2; 
+}
+.nutrition-card.fat .card-icon-wrapper i {
+    color: #ef4444; 
+}
+
+.nutrition-card.fiber .card-icon-wrapper {
+    background-color: #ecfdf5; 
+}
+.nutrition-card.fiber .card-icon-wrapper i {
+    color: #10b981; 
+}
+
+.nutrition-card.sodium .card-icon-wrapper {
+    background-color: #f5f3ff; 
+}
+.nutrition-card.sodium .card-icon-wrapper i {
+    color: #8b5cf6; 
+   
+}
+/************************** 2. instruction Tab Style ***************/
+
+.ingredient-item,
+.instruction-item { 
+ display: flex;
+ align-items: flex-start; 
+margin-bottom: 16px; 
+ line-height: 1.5;
+ font-size: 1rem;
+ font-weight: 500;
+ color: var(--text-dark); 
+}
+
+.item-number {
+ width: 48px;
+ height: 48px;
+ border-radius: 16px; 
+ background-color: var(--main-color); 
+ color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-right: 15px; 
+flex-shrink: 0; 
+font-weight: 700;
+ font-size: 1rem;
+}
+.item-number1{
+  width: 24px;
+ height: 24px;
+ border-radius: 50%; 
+}
+.item-text {
+ flex-grow: 1;
+ color: var(--text-dark); 
+}
+
+/************************** 4. Chef's Tips Tab Style ***************/
+
+
+
+#chefsTips-tab .list-unstyled li {
+    border-left: 2px solid var(--main-color);
+    background-color:#fffbeb; 
+    border-radius: 8px; 
+    padding: 18px;
+    margin-bottom: 12px;
+    
+    display: flex;
+    align-items: flex-start;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--text-dark);
+}
+
+#chefsTips-tab .list-unstyled li i {
+   
+    font-size: 0.7rem; 
+    color: var(--main-color); 
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    
+   
+    background-color: var(--main-color);
+    
+    color: white; 
+    background-color: var(--main-color); 
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-right: 12px;
+    margin-top: 0; 
+    flex-shrink: 0;
+}
+/**********scrollbar style***********/
+
+
+.main-content-scroll::-webkit-scrollbar,
+#instruction-tab::-webkit-scrollbar
+{
+ width: 6px; 
+ height: 6px;
+}
+
+.main-content-scroll::-webkit-scrollbar-track,
+#instruction-tab::-webkit-scrollbar-track
+{
+ background: #fdfdfd; 
+ border-radius: 10px;
+}
+
+.main-content-scroll::-webkit-scrollbar-thumb,
+#instruction-tab::-webkit-scrollbar-thumb
+{
+ background-color: #fe886a4d; 
+ border-radius: 10px;
+ border: 1px solid #fe886a4d; 
+}
+
+.main-content-scroll::-webkit-scrollbar-thumb:hover,
+#instruction-tab::-webkit-scrollbar-thumb:hover
+{
+    background-color: #f7a977; 
+}
+

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>what-is-for-dinner.vercel.app</title>
+    <link rel="icon" href="https://clarity-seven-drab.vercel.app/favicon.png"
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body >
+  <!-------------nav section---------------->
+ <nav class="navbar navbar-expand-lg bg-white border-bottom border-2">
+  <div class="container">
+    <a class="navbar-brand d-flex mt-1" href="#">
+      <i class="fa-solid fa-utensils bg-danger text-white rounded-circle mainShadow p-2 d-flex
+      align-items-center justify-content-center"></i>
+      <div class="ms-3">
+        <h1 class="fs-3 fw-bolder mb-0">What's For Dinner</h1>  
+        <p class="fs-6 fw-light">Your daily meal inspiration</p>
+      </div>
+    </a>
+
+    <!-- زر التوغل -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center">
+        <li class="nav-item me-3">
+          <a href="#" class="nav-link d-flex  text-dark">
+            <i class="fa-solid fa-bookmark"></i>
+            <span class="d-block d-lg-none ms-2">Saved Recipes</span>
+          </a>
+        </li>
+        <li class="nav-item me-3">
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span class="d-block d-lg-none ms-2">History</span>
+          </a>
+        </li>
+        <li class="nav-item me-3">
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+            <i class="fa-solid fa-gear"></i>
+            <span class="d-block d-lg-none ms-2">Settings</span>
+          </a>
+        </li>
+         <li class="nav-item me-3">
+          <a href="#" class="nav-link d-flex align-items-center text-dark">
+          <img src="imges/avatar-4.jpg" alt="avatar" class="nav-img">
+            <span class="d-block d-lg-none ms-2">Profile</span></a>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   <!-------------meals section---------------->
+<section id="meals" class="meals mb-4 " >
+  <div class="container  mainShadow  bg-img">
+    <div class="row row-height  overflow-y-scroll main-content-scroll  ">
+      <div class="col-lg-5  px-0 position-relative   ">
+        <div class="position-absolute img-reviews bg-white ">
+                      <div class="d-flex align-items-center " >
+                        
+                         <i class="fa-solid fa-star text-warning me-1 "></i>
+                               <p id="reviewsP" class="text-style fw-bolder mb-0 me-1"></p>
+
+                        <span id="reviewsSpan" class="main-color exeedTimeFontP text-style"></span>
+                        
+                      </div>
+                    </div>
+  <div class="pe-4 h-100 rounded-start-4  overflow-hidden bg-white  ">
+    <img src="" class="w-100 overflow-hidden meal-img " id="meal-img">
+  </div>
+<div class="row position-absolute img-desc bg-white ">
+                    <div class="col-4  text-center">
+                      <div class="text-style ">
+                        
+                         <i class="fa-solid fa-clock text-clore"></i><br>
+                        <span class="main-color exeedTimeFontP">Prep Time</span><br>
+                        <p id="PrepTime" class="fw-bold"></p>
+                      </div>
+                    </div>
+                    <div class="col-4  text-center">
+                      <div class="text-style ">
+                  
+                         <i class="fa-solid fa-fire-burner text-clore"></i><br>
+                        <span class="main-color exeedTimeFontP">Cook Time</span><br>
+                        <p id="CookTime" class="fw-bold"></p>
+                      </div>
+                    </div>
+                    <div class="col-4  text-center">
+                      <div class="text-style ">
+                       <i class="fa-solid fa-people-group text-primary  "></i><br>
+                        <span class=" exeedTimeFontP">Servings</span><br>
+                        <p id="Servings" class="fw-bold d-inline-block me-1"></p><span class="fw-bold">people</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+</div>
+
+      <div class="col-lg-7 p-4 bg-white rounded-start-4  " >
+        <div class="ps-2 h-100  pt-3 ">
+<span class="badge rounded-pill level p-2" id="level"></span>
+<span class="badge rounded-pill cuisine mb-2 p-2" id="cuisine"></span>
+<div class="exeedTime d-flex align-items-center mt-4 bg-main-color2 d-none">
+ <div> <i class="fa-solid fa-triangle-exclamation text-clore fs-5 mb-3"></i></div>
+  <div class="ps-2">
+  <h3 class=" exeedTimeFontH mb-0">Extended Preparation Time</h3>
+  <p class="exeedTimeFontP text-clore"> This recipe requires more than 45 minutes to prepare. Plan  accordingly!
+                  </p></div>
+</div>
+<div class="row">
+  <div class="col-md-8">
+    <h2 id="title" cla]ss="fs-1 fw-bolder"> Shrimp Scampi</h2>
+    <p id="descraption" class="lead fw-normal">Garlicky shrimp in white wine butter sauce
+</p>
+  </div>
+  <div class="col-md-4 d-flex justify-content-end">
+    <i class="fa-solid fa-bookmark bg-main-color2 icon text-danger d-flex justify-content-center align-items-lg-center me-3 "></i>
+    <i class="fa-solid fa-share-nodes bg-main-color2 icon  text-danger d-flex justify-content-center align-items-lg-center "></i>
+  </div>
+  <div class="container">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="ingredients-tab-btn" data-bs-toggle="tab" href="#ingredients-tab" role="tab">
+        <i class="fa-solid fa-list-check"></i> Ingredients
+      </a>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="instruction-tab-btn" data-bs-toggle="tab" href="#instruction-tab" role="tab">
+        <i class="fa-solid fa-book-open"></i> Instruction
+      </a>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="nutrition-tab-btn" data-bs-toggle="tab" href="#nutrition-tab" role="tab">
+        <i class="fa-solid fa-chart-pie"></i> Nutrition
+      </a>
+    </li>
+
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="chefsTips-tab-btn" data-bs-toggle="tab" href="#chefsTips-tab" role="tab">
+        <i class="fa-solid fa-lightbulb"></i> Chef's Tips
+      </a>
+    </li>
+
+  </ul>
+
+  <hr>
+
+  <!-- Tab content -->
+  <div class="tab-content " id="myTabContent">
+
+    <!-- Ingredients -->
+    <div class="tab-pane fade show active bg-main-color2 p-3 rounded-4 mb-4  " id="ingredients-tab" role="tabpanel">
+      <ul class="list-unstyled" id="ingredients-list"></ul>
+    </div>
+
+    <!-- Instruction -->
+    <div class="tab-pane fade p-4 rounded-3 mb-4 h-scroll " id="instruction-tab" role="tabpanel">
+      <ul class="list-unstyled" id="instruction-list"></ul>
+    </div>
+
+    <!-- Nutrition -->
+    <div class="tab-pane fade mb-4 p-4" id="nutrition-tab" role="tabpanel">
+      <ul class="list-unstyled" id="nutrition-list"></ul>
+    </div>
+
+    <!-- Chef's Tips -->
+    <div class="tab-pane fade mb-4 p-4" id="chefsTips-tab" role="tabpanel">
+      <ul class="list-unstyled" id="chefsTips-list"></ul>
+    </div>
+
+  </div>
+</div>
+
+        <hr>
+<div class="d-grid gap-2 d-md-block">
+  <button class="btn my-button text-white mt-2" id="my-button" type="button"><i class="fa-solid fa-arrows-rotate me-2"></i>Try Another Recipe
+</button>
+</div>
+</div>
+
+      </div></div>
+    </div></div>
+ 
+</section>
+   <!---------- bootstrap script---------------->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -123,6 +123,7 @@ cursor: pointer;
   border-bottom-left-radius: 2rem;
 }
 .meal-img{
+    width: 100%;
    object-fit: cover;
     object-position: center;
     border-radius: inherit;
@@ -202,7 +203,13 @@ color:#1447e6;
   transition: 0.25s ease;
   transform: scale(1);
 }
+.img-screen{
+    background-color: #fff;
+    width: 100%;
+    overflow:hidden;
+    border-radius: 16px;
 
+}
 
 @media (min-width: 768px) {
   .my-button {
@@ -216,6 +223,20 @@ color:#1447e6;
   .row-height{
     height: auto; 
 }
+.img-screen {
+     background-color:#fff9ec ;
+        margin-top: 10px;
+    width:95%;
+    margin:auto ;
+    
+}
+.img-desc{
+    width: 88%;
+   left:30px;
+   right:30px;
+   
+  
+}
   
 }
 
@@ -227,7 +248,12 @@ color:#1447e6;
   
 }
 
-
+.titel-icon i{
+    transition: all.3s;
+}
+.titel-icon i:hover{
+    background-color: #ffd7a8;
+}
 /***********nav and tabs style***********/
 .nav-tabs {
   display: flex !important;
@@ -473,12 +499,7 @@ font-weight: 700;
  flex-grow: 1;
  color: var(--text-dark); 
 }
-.titel-icon i{
-    transition: all.3s;
-}
-.titel-icon i:hover{
-    background-color: #ffd7a8;
-}
+
 /************************** 4. Chef's Tips Tab Style ***************/
 
 

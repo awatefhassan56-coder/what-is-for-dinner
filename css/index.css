@@ -473,7 +473,12 @@ font-weight: 700;
  flex-grow: 1;
  color: var(--text-dark); 
 }
-
+.titel-icon i{
+    transition: all.3s;
+}
+.titel-icon i:hover{
+    background-color: #ffd7a8;
+}
 /************************** 4. Chef's Tips Tab Style ***************/
 
 

@@ -18,9 +18,13 @@
 
   <body >
   <!-------------nav section---------------->
- <nav class="navbar navbar-expand-lg bg-white border-bottom border-2">
-  <div class="container">
-    <a class="navbar-brand d-flex mt-1" href="#">
+  <header>
+
+        <div id="header">
+
+            <nav class="navbar navbar-expand-md  bg-white border-bottom border-2 mainShadow">
+                <div class="container">
+                        <a class="navbar-brand d-flex mt-1" href="#">
       <i class="fa-solid fa-utensils bg-danger text-white rounded-circle mainShadow p-2 d-flex
       align-items-center justify-content-center"></i>
       <div class="ms-3">
@@ -29,46 +33,53 @@
       </div>
     </a>
 
-    <!-- زر التوغل -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-md-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    <span class=" ms-2 d-inline-block d-md-none">Saved Recipes</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-lg-center">
-        <li class="nav-item me-3">
-          <a href="#" class="nav-link d-flex  text-dark">
-            <i class="fa-solid fa-bookmark"></i>
-            <span class="d-block d-lg-none ms-2">Saved Recipes</span>
-          </a>
-        </li>
-        <li class="nav-item me-3">
-          <a href="#" class="nav-link d-flex align-items-center text-dark">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <span class="d-block d-lg-none ms-2">History</span>
-          </a>
-        </li>
-        <li class="nav-item me-3">
-          <a href="#" class="nav-link d-flex align-items-center text-dark">
-            <i class="fa-solid fa-gear"></i>
-            <span class="d-block d-lg-none ms-2">Settings</span>
-          </a>
-        </li>
-         <li class="nav-item me-3">
-          <a href="#" class="nav-link d-flex align-items-center text-dark">
-          <img src="imges/avatar-4.jpg" alt="avatar" class="nav-img">
-            <span class="d-block d-lg-none ms-2">Profile</span></a>
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <span class="ms-2 d-inline-block d-md-none">Recent</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-gear"></i>
+                                    <span class="ms-2 d-inline-block d-md-none">Settings</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center " href="#">
+                                    <div class="nav-img rounded-circle overflow-hidden">
+                                        <img src="imges/avatar-4.jpg" alt="" class="w-100">
+                                    </div>
+                                    <span class="ms-3 d-inline-block d-md-none">Profile</span>
+                                </a>
+                            </li>
 
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+ 
    <!-------------meals section---------------->
 <section id="meals" class="meals mb-4 " >
   <div class="container  mainShadow  bg-img">
-    <div class="row row-height  overflow-y-scroll main-content-scroll  ">
+    <div class="row ">
       <div class="col-lg-5  px-0 position-relative   ">
         <div class="position-absolute img-reviews bg-white ">
                       <div class="d-flex align-items-center " >
@@ -80,7 +91,7 @@
                         
                       </div>
                     </div>
-  <div class="pe-4 h-100 rounded-start-4  overflow-hidden bg-white  ">
+  <div class="pe-md-4 h-100 rounded-start-4  overflow-hidden bg-white  ">
     <img src="" class="w-100 overflow-hidden meal-img " id="meal-img">
   </div>
 <div class="row position-absolute img-desc bg-white ">
@@ -112,7 +123,7 @@
                   
 </div>
 
-      <div class="col-lg-7 p-4 bg-white rounded-start-4  " >
+      <div class="col-lg-7 p-4 bg-white rounded-start-4   row-height  overflow-y-scroll overflow-y-md-scroll main-content-scroll   " >
         <div class="ps-2 h-100  pt-3 ">
 <span class="badge rounded-pill level p-2" id="level"></span>
 <span class="badge rounded-pill cuisine mb-2 p-2" id="cuisine"></span>
@@ -124,15 +135,16 @@
                   </p></div>
 </div>
 <div class="row">
+   <div class="col-md-4 d-flex justify-content-end">
+    <i class="fa-solid fa-bookmark bg-main-color2 icon text-danger d-flex justify-content-center align-items-center me-3 "></i>
+    <i class="fa-solid fa-share-nodes bg-main-color2 icon  text-danger d-flex justify-content-center align-items-center "></i>
+  </div>
   <div class="col-md-8">
     <h2 id="title" cla]ss="fs-1 fw-bolder"> Shrimp Scampi</h2>
     <p id="descraption" class="lead fw-normal">Garlicky shrimp in white wine butter sauce
 </p>
   </div>
-  <div class="col-md-4 d-flex justify-content-end">
-    <i class="fa-solid fa-bookmark bg-main-color2 icon text-danger d-flex justify-content-center align-items-lg-center me-3 "></i>
-    <i class="fa-solid fa-share-nodes bg-main-color2 icon  text-danger d-flex justify-content-center align-items-lg-center "></i>
-  </div>
+ 
   <div class="container">
 
   <!-- Nav tabs -->
@@ -180,12 +192,12 @@
     </div>
 
     <!-- Nutrition -->
-    <div class="tab-pane fade mb-4 p-4" id="nutrition-tab" role="tabpanel">
-      <ul class="list-unstyled" id="nutrition-list"></ul>
+    <div class="tab-pane fade mb-4 p-4  " id="nutrition-tab" role="tabpanel">
+      <ul class="list-unstyled main-content-scroll" id="nutrition-list"></ul>
     </div>
 
     <!-- Chef's Tips -->
-    <div class="tab-pane fade mb-4 p-4" id="chefsTips-tab" role="tabpanel">
+    <div class="tab-pane fade mb-4 p-4" id="chefsTips-tab" role="tabpanel">h
       <ul class="list-unstyled" id="chefsTips-list"></ul>
     </div>
 
@@ -203,6 +215,7 @@
     </div></div>
  
 </section>
+
    <!---------- bootstrap script---------------->
 
     <script src="js/bootstrap.bundle.min.js"></script>
